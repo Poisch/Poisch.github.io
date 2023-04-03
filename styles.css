@@ -43,7 +43,7 @@ body{display: flex;}
     flex: 1 1 200px;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-device-width: 640px) {
     .barre-contenu{
         visibility: hidden;
         width: 0%;
