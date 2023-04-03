@@ -1,0 +1,46 @@
+.barre-contenu{
+    background: rgb(0,252,255);
+    background: linear-gradient(321deg, rgba(0,252,255,1) 0%, rgba(49,150,253,1) 37%, rgba(62,125,253,1) 59%, rgba(21,57,245,1) 87%, rgba(36,0,255,1) 100%); 
+    background-blend-mode: screen;
+    background-size: cover;
+    float: left;
+    width: 20%;
+    min-height: 100vh;
+}
+
+.main{
+    float: right;
+    width: 80%;
+    margin: auto;
+}
+
+.description{
+    float: left;
+    width: 50%;
+    min-height: fit-content;
+    background-color: brown;
+    display: table-cell;
+}
+.contenu{
+    float: right;
+    width: 50%;
+    background-color: burlywood;
+    min-height: fit-content;
+    display: table-cell;
+}
+
+.ligne:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    text-rendering: geometricPrecision;
+}
+h3{
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    text-rendering: geometricPrecision;
+}
