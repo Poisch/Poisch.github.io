@@ -1,23 +1,24 @@
+body{display: flex;}
+
 .barre-contenu{
-    background: rgb(0,252,255);
     background: linear-gradient(321deg, rgba(0,252,255,1) 0%, rgba(49,150,253,1) 37%, rgba(62,125,253,1) 59%, rgba(21,57,245,1) 87%, rgba(36,0,255,1) 100%); 
     background-blend-mode: screen;
     background-size: cover;
     float: left;
-    width: 20%;
+    width: 15%;
     min-height: 100vh;
 }
 
+
 .main{
     float: right;
-    width: 80%;
-    margin: auto;
+    flex: 1 1 100%;
 }
 
 .ligne{
     display: flex;
 	max-width: 100%;
-    justify-content: flex-start;
+    
 }
 
 
@@ -26,7 +27,8 @@
     width: 50%;
     background-color: brown;
     min-height: fit-content;
-    max-height: 1000px;
+    min-width: max-content;
+    max-height: 500px;
     flex: 1 1 200px;
     
 }
@@ -36,15 +38,23 @@
     width: 50%;
     background-color: burlywood;
     min-height: fit-content;
-    max-height: 1000px;
+    
+    max-height: 500px;
     flex: 1 1 200px;
 }
 
 @media (max-width: 600px) {
-	.ligne {
+    .barre-contenu{
+        visibility: hidden;
+        width: 0%;
+    }  
+    .ligne {
 		flex-wrap: wrap;
-	}
+        align-content: center;
+	} 
 }
+
+
 
 h1{
     font-size: 40px;
