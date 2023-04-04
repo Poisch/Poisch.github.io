@@ -51,7 +51,24 @@ body{display: flex;}
     .ligne {
 		flex-wrap: wrap;
         align-content: center;
+        flex-direction: column;
 	} 
+    .contenu{width: 100%;}
+    .description{width: 100%;}
+}
+
+@media (max-width: 900px) {
+    .barre-contenu{
+        visibility: hidden;
+        width: 0%;
+    }  
+    .ligne {
+		flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+	} 
+    .contenu{width: 100%;}
+    .description{width: 100%;}
 }
 
 
