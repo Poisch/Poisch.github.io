@@ -5,7 +5,7 @@ body{display: flex;}
     background-blend-mode: screen;
     background-size: cover;
     float: left;
-    width: 15%;
+    width: 13%;
     min-height: 100vh;
 }
 
@@ -13,12 +13,15 @@ body{display: flex;}
 .main{
     float: right;
     flex: 1 1 100%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .ligne{
     display: flex;
 	max-width: 100%;
-    
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
@@ -55,7 +58,6 @@ body{display: flex;}
 	} 
     .contenu{width: 100%;}
     .description{width: 100%;}
-    .main{margin-left: 0%;}
 }
 
 @media (max-width: 900px) {
@@ -70,7 +72,6 @@ body{display: flex;}
 	} 
     .contenu{width: 100%;}
     .description{width: 100%;}
-    .main{margin-left: 0%;}
 }
 
 
