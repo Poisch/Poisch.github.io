@@ -5,7 +5,9 @@ body{display: flex;}
     background-blend-mode: screen;
     background-size: cover;
     float: left;
-    width: 13%;
+
+    width: 12%;
+    min-width: 12%;
     min-height: 100vh;
 }
 
@@ -60,6 +62,16 @@ body{display: flex;}
     .description{width: 100%;}
 }
 
+@media (max-width: 1200px) {
+    .ligne {
+		flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+	} 
+    .contenu{width: 100%;}
+    .description{width: 100%;}
+}
+
 @media (max-width: 900px) {
     .barre-contenu{
         visibility: hidden;
@@ -72,6 +84,7 @@ body{display: flex;}
 	} 
     .contenu{width: 100%;}
     .description{width: 100%;}
+    .main{margin-left: 0%;}
 }
 
 
@@ -80,6 +93,12 @@ h1{
     font-size: 40px;
     font-family:'Courier New', Courier, monospace;
     text-rendering: geometricPrecision;
+}
+h2{
+    font-size: 22px;
+    font-family:'Courier New', Courier, monospace;
+    text-rendering: geometricPrecision;
+    text-align: center;
 }
 h3{
     font-size: 15px;
