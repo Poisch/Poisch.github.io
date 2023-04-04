@@ -55,6 +55,7 @@ body{display: flex;}
 	} 
     .contenu{width: 100%;}
     .description{width: 100%;}
+    .main{margin-left: 0%;}
 }
 
 @media (max-width: 900px) {
@@ -69,6 +70,7 @@ body{display: flex;}
 	} 
     .contenu{width: 100%;}
     .description{width: 100%;}
+    .main{margin-left: 0%;}
 }
 
 
