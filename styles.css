@@ -5,17 +5,18 @@ body{display: flex;}
     background-blend-mode: screen;
     background-size: cover;
     float: left;
+
     width: 12%;
     min-width: 12%;
     min-height: 100vh;
-    position: fixed;
 }
 
 
 .main{
     float: right;
     flex: 1 1 100%;
-    margin-left: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .ligne{
