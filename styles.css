@@ -65,6 +65,7 @@ button{
 	} 
     .contenu{width: 100%;}
     .description{width: 100%;}
+    .main{margin-left: 0%;}
 }
 
 @media (max-width: 1200px) {
