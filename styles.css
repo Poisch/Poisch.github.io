@@ -44,7 +44,7 @@ button{
 .contenu{
     float: right;
     width: 50%;
-    background-image: radial-gradient(#ffe6e1 20%, #ffffff 20%);
+    background-image: radial-gradient( #ffd1d1 20%, #ffffff 20%);
     background-position: 0 0;
     background-size: 40px 40px;
     margin-top: 10%;
