@@ -7,48 +7,53 @@
     <link rel="stylesheet" href="styles.css">
  </head>
 
- 
+  <script>
+    function fonctionligne1() {
+    document.getElementById("ligne1").style.color = "red";
+  }
+  </script>
  <body>
     <div class="barre-contenu">
-      <center><img src="images\mini-logo.png" style="height:60px; border-radius: 50%; border: 5px solid lavenderblush;margin-top: 10%;"></center>
-      <h2>Premiere ligne</h2>
-      <h2>2eme ligne</h2>
+      <center><img src="images\logo2.png" style="height:100px; border-radius: 50%;margin-top: 10%;margin-bottom: 10%; background-color:burlywood;"></center>
+      <center><button onclick="document.getElementById('ligne1').scrollIntoView();">Premiere ligne</button></center>
+      <center><button onclick="document.getElementById('ligne2').scrollIntoView();" style="margin-top: 10%;">2eme ligne</button></center>
+      <center><button onclick="document.getElementById('ligne3').scrollIntoView();" style="margin-top: 10%;">3eme ligne</button></center>
+      
     </div>
 
     <div class="main">
-      <div class="ligne">
+      <div class="ligne" id="ligne1">
         <div class="description">
-          <h1><center>Aurore-First-Website</center> </h1>
-          <h3>Desciptif de ce que j'ai pu créer</h3>
+          <h1 style="margin-top: 10%;"><center>Aurore-First-Website</center> </h1>
+          <h3 style="margin-left:3%;">Desciptif de ce que j'ai pu créer</h3>
         </div>
         <div class="contenu">
           <h3>Contenu du type video ou animation</h3>
-          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
-          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode" events-target="global"></spline-viewer>
+          <center style="margin-top: 20%;"><img src="images\description.png"></center>
         </div>
       </div>
 
-      <div class="ligne">
+      <div class="ligne" id="ligne2">
         <div class="description">
-          <h1><center>deuxième ligne</center> </h1>
-          <h3>Desciptif de ce que j'ai pu créer</h3>
+          <h1><center>Des animations 2D</center> </h1>
+          <h3>Voici une animation de vulgarisation qui explique pourquoi le verre n'est pas transparent aux rayons UVs.</h3>
         </div>
         <div class="contenu">
-          <h3>Contenu du type video ou animation</h3>
-          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
-          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode" events-target="global"></spline-viewer>
+          <center>
+            <video width="320" height="240" controls>
+              <source src="video\Animation+UV.mp4" type=video/mp4>
+            </video>
+          </center>
         </div>
       </div>
 
-      <div class="ligne">
+      <div class="ligne" id="ligne3">
         <div class="description">
           <h1><center>troisième ligne</center> </h1>
           <h3>Desciptif de ce que j'ai pu créer</h3>
         </div>
         <div class="contenu">
           <h3>Contenu du type video ou animation</h3>
-          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
-          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode" events-target="global"></spline-viewer>
         </div>
       </div>
 
@@ -59,8 +64,6 @@
         </div>
         <div class="contenu">
           <h3>Contenu du type video ou animation</h3>
-          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
-          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode" events-target="global"></spline-viewer>
         </div>
       </div>
 

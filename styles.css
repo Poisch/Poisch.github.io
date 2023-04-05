@@ -1,9 +1,14 @@
-body{display: flex;}
+body{
+    display: flex;
+}
+
+button{
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    text-rendering: geometricPrecision;
+}
 
 .barre-contenu{
-    background: linear-gradient(321deg, rgba(0,252,255,1) 0%, rgba(49,150,253,1) 37%, rgba(62,125,253,1) 59%, rgba(21,57,245,1) 87%, rgba(36,0,255,1) 100%); 
-    background-blend-mode: screen;
-    background-size: cover;
     float: left;
     width: 12%;
     min-width: 12%;
@@ -29,10 +34,9 @@ body{display: flex;}
 .description{
     float: left;
     width: 50%;
-    background-color: brown;
+    background-color: white;
     min-height: fit-content;
     min-width: 300px;
-    max-height: 500px;
     flex: 1 1 200px;
     
 }
@@ -40,10 +44,12 @@ body{display: flex;}
 .contenu{
     float: right;
     width: 50%;
-    background-color: burlywood;
+    background-image: radial-gradient(#ffe6e1 20%, #ffffff 20%);
+    background-position: 0 0;
+    background-size: 40px 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     min-height: fit-content;
-    
-    max-height: 500px;
     flex: 1 1 200px;
 }
 
@@ -89,18 +95,19 @@ body{display: flex;}
 
 
 h1{
-    font-size: 40px;
+    font-size: 60px;
     font-family:'Courier New', Courier, monospace;
     text-rendering: geometricPrecision;
 }
 h2{
-    font-size: 22px;
+    font-size: 30px;
     font-family:'Courier New', Courier, monospace;
     text-rendering: geometricPrecision;
     text-align: center;
 }
 h3{
-    font-size: 15px;
+    font-size: 25px;
     font-family:'Courier New', Courier, monospace;
     text-rendering: geometricPrecision;
+    color: gray;
 }
