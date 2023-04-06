@@ -7,37 +7,63 @@
     <link rel="stylesheet" href="styles.css">
  </head>
 
-  <script>
+ <script>
     function fonctionligne1() {
     document.getElementById("ligne1").style.color = "red";
   }
-  </script>
+    function pageanim2D() {
+        window.location.href = "index.html";
+      }
+ </script>
+
  <body>
     <div class="barre-contenu">
-      <center><img src="images\logo2.png" style="height:100px; border-radius: 50%;margin-top: 10%;margin-bottom: 10%; background-color:burlywood;"></center>
-      <center><button onclick="document.getElementById('ligne1').scrollIntoView();">About me</button></center>
-      <center><button onclick="document.getElementById('ligne2').scrollIntoView();" style="margin-top: 10%;">Animation 2D</button></center>
-      <center><button onclick="document.getElementById('ligne3').scrollIntoView();" style="margin-top: 10%;">Animation 3D</button></center>
+      <center>
+        <button style="  border: none; cursor: pointer; appearance: none; background-color: inherit;" onclick="pageanim2D()">
+          <img src="images\logo2.png" style="height:100px; border-radius: 50%;margin-top: 10%;margin-bottom: 10%; background-color:burlywood;">
+        </button>
+      </center>
+      <center>
+        <button onclick="document.getElementById('Me').scrollIntoView();">
+          About me
+        </button>
+      </center>
+      <center>
+        <button onclick="document.getElementById('2D').scrollIntoView();" style="margin-top: 10%;">
+          Animations 2D
+        </button>
+      </center>
+      <center>
+        <button onclick="document.getElementById('3D').scrollIntoView();" style="margin-top: 10%;">
+          Animations 3D
+        </button>
+      </center>
+      <center>
+        <button onclick="document.getElementById('inge').scrollIntoView();" style="margin-top: 10%;">
+          Ingéniérie
+        </button>
+      </center>
       
     </div>
 
     <div class="main">
-      <div class="ligne" id="ligne1">
+      <div class="ligne" id="Me">
         <div class="description">
           <h1 style="margin-top: 10%;"><center>Aurore's-Website</center> </h1>
-          <h3 style="margin-left:3%;"> Grâce à HTML et CSS, j'ai conçu un site simple mais élégant pour présenter mes projets d'animations 2D et 3D. 
-            Avec une navigation facile, vous pouvez facilement découvrir mes derniers travaux les plus captivants. 
-            Mon site est hébergé sur Github, qui est une plateforme fiable pour partager mes projets avec le monde entier.</h3>
+          <h3 style="margin-left:3%;"> Je suis une élève en école d'ingénieur qui après avoir vu un poste instagram à voulu créer son propre site internet.
+            Grâce au language HTML et CSS, j'ai conçu ce site pour présenter mes projets d'animations 2D/3D mais aussi mes projets personnels concernant l'ingéniérie. 
+          </h3>
         </div>
         <div class="contenu">
           <center style="margin-top: 20%;"><img src="images\description.png"></center>
         </div>
       </div>
 
-      <div class="ligne" id="ligne2">
+      <div class="ligne" id="2D">
         <div class="description">
           <h1><center>Des animations 2D</center> </h1>
-          <h3>Voici une animation de vulgarisation qui explique pourquoi le verre n'est pas transparent aux rayons UVs.</h3>
+          <h3>Voici une animation de vulgarisation qui explique pourquoi le verre n'est pas transparent aux rayons UVs. Et non ce n'est pas ma voix !</h3>
+          <center><button>En savoir plus</button></center>
         </div>
         <div class="contenu">
           <center>
@@ -48,9 +74,9 @@
         </div>
       </div>
 
-      <div class="ligne" id="ligne3">
+      <div class="ligne" id="3D">
         <div class="description">
-          <h1><center>troisième ligne</center> </h1>
+          <h1><center>Des animations 3D</center> </h1>
           <h3>Desciptif de ce que j'ai pu créer</h3>
         </div>
         <div class="contenu">
@@ -58,9 +84,9 @@
         </div>
       </div>
 
-      <div class="ligne">
+      <div class="ligne" id="inge">
         <div class="description">
-          <h1><center>quatrieme ligne</center> </h1>
+          <h1><center>Projets d'ingéniérie</center> </h1>
           <h3>Desciptif de ce que j'ai pu créer</h3>
         </div>
         <div class="contenu">
@@ -68,8 +94,12 @@
         </div>
       </div>
 
+      <footer>
+        <p>Poischyron ©2023. All rights reserved.</p>
+      </footer>
     </div>
-    
+
  </body>
+
 </html>
    
