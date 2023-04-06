@@ -12,14 +12,17 @@
     document.getElementById("ligne1").style.color = "red";
   }
     function pageanim2D() {
-        window.location.href = "index.html";
+        window.location.href = "2D.html";
       }
+    function pageacc() {
+        window.location.href = "index.html";
+      }    
  </script>
 
  <body>
     <div class="barre-contenu">
       <center>
-        <button style="  border: none; cursor: pointer; appearance: none; background-color: inherit;" onclick="pageanim2D()">
+        <button style="  border: none; cursor: pointer; appearance: none; background-color: inherit;" onclick="pageacc()">
           <img src="images\logo2.png" style="height:100px; border-radius: 50%;margin-top: 10%;margin-bottom: 10%; background-color:burlywood;">
         </button>
       </center>
@@ -63,7 +66,7 @@
         <div class="description">
           <h1><center>Des animations 2D</center> </h1>
           <h3>Voici une animation de vulgarisation qui explique pourquoi le verre n'est pas transparent aux rayons UVs. Et non ce n'est pas ma voix !</h3>
-          <center><button>En savoir plus</button></center>
+          <center><button onclick="pageanim2D()">En savoir plus</button></center>
         </div>
         <div class="contenu">
           <center>

@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+ <head>
     <meta charset="utf-8">
-    <title>Aurore's First Website</title>
-    <link rel="icon" type="image/png" href="images/website_icon.png"/>
-    <link rel="stylesheet" href="mystyle.css">
-  </head>
-  <h1 class="grad" style="font-size: 40px; size-adjust: screen;"><center>Aurore's First Website</center></h1>
+    <title> Aurore's Website </title>
+    <link rel="icon" type="image/png" href="images/first-icon-website.png"/>
+    <link rel="stylesheet" href="styles.css">
+ </head>
 
-  <body>
-    <!--First section-->
-    <div style="background-size: cover;background-color:yellow; min-height: min-content;max-height: fit-content;margin-left: 100px; margin-right: 100px;">
-    <h1>Zone jaune</h1>
-    </div>
-    <div class="grad">
-      <h1>Zone grad</h1>
-    </div>
-    <div class="row">
-      <div class="left_column" style="background-color: aquamarine;height: 40px;">
-        <h2>Colonnne 1</h2>
-        
-      </div>
-      <div class="left_column grad" style="background-color:brown;height: 40px;">
-        <h2>Colonnne 2</h2>
-      </div>
-      <div class="scroll-container">
-        <div class="scroll-page" id="page-1">1</div>
-        <div class="scroll-page" id="page-2">2</div>
-        <div class="scroll-page" id="page-3">3</div>
-      </div>
+ <script>
+    function fonctionligne1() {
+    document.getElementById("ligne1").style.color = "red";
+  }
+    function pageanim2D() {
+        window.location.href = "2D.html";
+      }
+    function pageacc() {
+        window.location.href = "index.html";
+      }    
+ </script>
+
+ <body>
+    <div class="barre-contenu">
+      <center>
+        <button style="  border: none; cursor: pointer; appearance: none; background-color: inherit;" onclick="pageacc()">
+          <img src="images\logo2.png" style="height:100px; border-radius: 50%;margin-top: 10%;margin-bottom: 10%; background-color:burlywood;">
+        </button>
+      
     </div>
 
-    
+    <div class="main">
+
+
+      <footer>
+        <center>
+          <p>Poischyron ©2023. All rights reserved.</p> 
+        </center>
+      </footer>
     </div>
-  </body>
+
+ </body>
+
 </html>
+   
