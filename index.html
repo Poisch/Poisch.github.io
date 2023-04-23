@@ -18,11 +18,12 @@
         window.location.href = "index.html";
       }    
  </script>
+ <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.304/build/spline-viewer.js"></script>
 
  <body>
     <div class="barre-contenu">
       <center>
-        <button style="  border: none; cursor: pointer; appearance: none; background-color: inherit;" onclick="pageacc()">
+        <button class="boutonacc" onclick="pageacc()">
           <img src="images\logo2.png" style="height:100px; border-radius: 50%;margin-top: 10%;margin-bottom: 10%; background-color:burlywood;">
         </button>
       </center>
@@ -65,7 +66,10 @@
       <div class="ligne" id="2D">
         <div class="description">
           <h1><center>Des animations 2D</center> </h1>
-          <h3>Voici une animation de vulgarisation qui explique pourquoi le verre n'est pas transparent aux rayons UVs. Et non ce n'est pas ma voix !</h3>
+          <h3>J'ai récemment décidé de combiner mon talent artistique avec ma passion pour la technologie.
+            Passant la majeure partie de mon temps devant des écrans, j'ai décidé de donner vie à mes dessins à travers des animations.  
+            A droite vous pouvez voir un de mes derniers projets : une animation de vulgarisation qui explique pourquoi le verre n'est pas transparent aux rayons UVs.
+            Et non ce n'est pas ma voix sur cette animation!</h3>
           <center><button onclick="pageanim2D()">En savoir plus</button></center>
         </div>
         <div class="contenu">
@@ -80,7 +84,7 @@
       <div class="ligne" id="3D">
         <div class="description">
           <h1><center>Des animations 3D</center> </h1>
-          <h3>Desciptif de ce que j'ai pu créer</h3>
+          <h3>De la même manière, j'ai voulu explorer d'autres manières de donner vie à mes créations ou concepts. </h3>
         </div>
         <div class="contenu">
           <h3>Contenu du type video ou animation</h3>
@@ -90,10 +94,15 @@
       <div class="ligne" id="inge">
         <div class="description">
           <h1><center>Projets d'ingéniérie</center> </h1>
-          <h3>Cette rubrique concerne des projets d'école mais aussi des projets personnels.</h3>
+          <h3>Cette rubrique concerne des projets d'école mais aussi des projets personnels. Pour un de mes cours nous avons recréer l'usine du père noël en réalité virtuel. 
+          Vous pouvez voir ci-contre la vidéo de présentation de ce projet.</h3>
         </div>
         <div class="contenu">
-          <h3>Contenu du type video ou animation</h3>
+          <center>
+            <video width="480" height="270" controls>
+            <source src="video\ARVR.mp4" type=video/mp4>
+            </video>
+          </center>
         </div>
       </div>
 
