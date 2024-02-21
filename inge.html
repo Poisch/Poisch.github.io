@@ -24,33 +24,42 @@
         </button>
       </center>
       <center>
+        <button onclick="document.getElementById('Homography').scrollIntoView();" style="margin-top: 10%;">
+            Homography
+          </button>
+          <button onclick="document.getElementById('BlueSletter').scrollIntoView();" style="margin-top: 10%;">
+            BlueSletter
+          </button>
         <button onclick="document.getElementById('ARVR').scrollIntoView();" style="margin-top: 10%;">
           Projet d'ARVR
         </button>
 
-        <button onclick="document.getElementById('BlueSletter').scrollIntoView();" style="margin-top: 10%;">
-          BlueSletter
-        </button>
+
       </center>
     </div>
 
     <div class="main">
-      <div class="ligne" id="ARVR">
-        <div class="description">
-          <h1> Projet de réalité virtuelle et augmentée </h1>
-          <h3> Pour un de mes cours nous avons recréer l'usine du père noël en réalité virtuelle. 
-            Vous pouvez voir ci-contre la vidéo de présentation de ce projet fait sur Unity.
-          </h3>
-        </div>
+        <div class="ligne" id="Homography">
+            <div class="description">
+              <h1> The Homography project </h1>
+              <h3> Tout est parti d'un projet de digital image processing : Réussir à lire le contenu d'une plaqued'immatriculation à partir d'une photo. 
+                Ma partenaire de projet et moi avions accès à beaucoup de ressources en ligne pour effectuer ce projet sans faire appel au machine learning. 
+                Nous avons donc pu mieux comprendre l'utilité des filtres, des échelles de gris, la Canny fonctionne pour la détection de bord etc. Cependant, un 
+                problème nous aura suivi tout au long du projet, la reconnaissance des charactères lorsque que l'on voit la plaque d'immatriculation de biais. C'est 
+                pour cela que sur un autre projet nous avons décidé de nous pencher sur ce problème et une solution des plus simple nous est venue : il suffit de changer 
+                la percepective de l'image. Voilà la naissance du projet sur l'amélioration de la recnnaissance de plaque d'immatriculation grâce à l'application de l'homographie. 
+                Les détails du projets peuvent se trouver <a href="https://www.instagram.com/vegantechnomad/">ici</a>.
+                                
+              </h3>
+            </div>
+    
+            <div class="contenu">
+                <center>
+                    <img src="images\Process_photo.png" height="450" width="650">
+                </center>
+            </div>
+          </div>        
 
-        <div class="contenu">
-          <center>
-            <video width="480" height="270" controls>
-                <source src="video\ARVR.mp4" type=video/mp4>
-            </video>
-          </center>
-        </div>
-      </div>
 
       <div class="ligne" id="BlueSletter">
         <div class="description">
@@ -70,6 +79,22 @@
             <center>
                 <img src="images\The-Newsletter-Project.png" height="670" width="450">
             </center>
+        </div>
+      </div>
+      <div class="ligne" id="ARVR">
+        <div class="description">
+          <h1> Projet de réalité virtuelle et augmentée </h1>
+          <h3> Pour un de mes cours nous avons recréer l'usine du père noël en réalité virtuelle. 
+            Vous pouvez voir ci-contre la vidéo de présentation de ce projet fait sur Unity.
+          </h3>
+        </div>
+
+        <div class="contenu">
+          <center>
+            <video width="480" height="270" controls>
+                <source src="video\ARVR.mp4" type=video/mp4>
+            </video>
+          </center>
         </div>
       </div>
       <footer>
