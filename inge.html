@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title> Aurore's Website </title>
+    <link rel="icon" type="image/png" href="images/first-icon-website.png"/>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+
+ <script>
+    function fonctionligne1() {
+    document.getElementById("ligne1").style.color = "red";
+  }
+    function pageacc() {
+        window.location.href = "index.html";
+      }    
+ </script>
+
+ <body>
+    <div class="barre-contenu">
+      <center>
+        <button style="  border: none; cursor: pointer; appearance: none; background-color: inherit;" onclick="pageacc()">
+          <img src="images\logo2.png" style="height:100px; border-radius: 50%;margin-top: 10%;margin-bottom: 10%; background-color:burlywood;">
+        </button>
+      </center>
+      <center>
+        <button onclick="document.getElementById('ARVR').scrollIntoView();" style="margin-top: 10%;">
+          ARVR
+        </button>
+
+        <button onclick="document.getElementById('BlueSletter').scrollIntoView();" style="margin-top: 10%;">
+          BlueSletter
+        </button>
+      </center>
+    </div>
+
+    <div class="main">
+      <div class="ligne" id="ARVR">
+        <div class="description">
+          <h1> Projet de réalité virtuelle et augmentée </h1>
+          <h3> Pour un de mes cours nous avons recréer l'usine du père noël en réalité virtuelle. 
+            Vous pouvez voir ci-contre la vidéo de présentation de ce projet fait sur Unity.
+          </h3>
+        </div>
+
+        <div class="contenu">
+          <center>
+            <video width="480" height="270" controls>
+                <source src="video\ARVR.mp4" type=video/mp4>
+            </video>
+          </center>
+        </div>
+      </div>
+
+      <div class="ligne" id="BlueSletter">
+        <div class="description">
+          <h1> The BlueSletter </h1>
+          <h3> Tout est parti d'une vidéo instagram de @vegantechnomade, qui présentait une de ses créations : la newsletter entre amis. 
+            Le concept était simple : envoyer un formulaire à ses amis et en compiler les réponses. La plus value de cette création 
+            était d'abord que tout le processus était automatisé donc qu'il n'y a qu'à créer le ou les formulaires. Ensuite tous les mois chacun devrait remplir 
+            son petit formulaire et au début de chaque nouveau mois en recevoir les réponses et donc avoir des nouvelles de ses amis à distance.
+            Je me suis donc donnée comme objectif de créer ce dispositif pour moi et mes amis de classe préparatoire éparpillés partout en France. 
+            En suivant les indications de son tutoriel, j'ai pu découvrir Airtable, des bases de données et une automatisation possible 
+            sans code et Zapier pour contourner les limitations de Airtable gratuit pour envoyer les resultats et liens pour les formulaires 
+            à tous les destinataires.
+          </h3>
+        </div>
+
+        <div class="contenu">
+          <img src="images\The-Newsletter-Project.png">
+        </div>
+      </div>
+      <footer>
+        <center>
+          <p>Poischyron ©2023. All rights reserved.</p> 
+        </center>
+      </footer>
+    </div>
+
+ </body>
+
+</html>
+   
